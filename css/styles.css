@@ -1,0 +1,102 @@
+:root {
+  --main-color: #262626;
+  /* --secondary-color: #757575;
+  --third-color: #fff;
+  --active-color: #2196f3;
+  --dark-bg-color: #2f303a;
+  --light-bg-color: #f5f4fa;
+  --logo-header-color: #000;
+  --form-button-focus-color: #188ce8;
+  --icons-main-color: #afb1b8; */
+}
+
+/* =============== basic reset =============== */
+body {
+  font-family: inherit;
+  color: var(--main-color);
+}
+
+a {
+  text-decoration: none; /* убираем подчеркивание ссылок */
+}
+
+ul {
+  list-style-type: none; /* убираем маркеры */
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* =============== components =============== */
+.container {
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  /* .footer & {
+    // display: block;
+    text-align: center;
+  }
+
+  .header & {
+    display: flex;
+    align-items: center;
+  } */
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+
+    /* .footer & {
+      display: flex;
+      align-items: baseline;
+      text-align: start;
+    } */
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .container {
+    max-width: 768px;
+
+    /* .footer & {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: baseline;
+    } */
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    max-width: 480px;
+
+    /* .footer & {
+      display: block;
+    } */
+  }
+}
+
+/* =============== HEADER =============== */

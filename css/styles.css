@@ -168,6 +168,7 @@ img {
     position: absolute;
     top: 15px;
     left: -24px;
+    pointer-events: none;
   }
 
   .surface-link .dropdown__item::after {

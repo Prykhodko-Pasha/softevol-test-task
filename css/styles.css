@@ -128,6 +128,12 @@ img {
   }
 }
 
+@media screen and (min-width: 1400px) {
+  .from1400 {
+    padding: 16px 30px 16px 12px;
+  }
+}
+
 /* =============== logo =============== */
 .logo {
   padding: 14px 6px 13px 10px;
@@ -212,6 +218,13 @@ img {
   white-space: nowrap;
 }
 
+@media screen and (min-width: 1400px) {
+  .nav__text {
+    visibility: visible;
+    width: 100%;
+  }
+}
+
 .nav__text::before {
   content: "";
   width: 0;
@@ -226,6 +239,12 @@ img {
   /* padding: 18px 30px 18px 12px; */
   /* visibility: hidden; */
   pointer-events: none;
+}
+
+@media screen and (min-width: 1400px) {
+  .nav__item {
+    pointer-events: all;
+  }
 }
 
 .surface-link:hover .nav__text::before,
@@ -346,7 +365,8 @@ img {
 .actions {
   margin-left: auto;
   display: flex;
-  /* height: 0; */
+  align-items: center;
+  white-space: nowrap;
 }
 
 .all-ms {
@@ -371,6 +391,12 @@ img {
     visibility: visible;
     width: 100%;
     pointer-events: all;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .actions {
+    margin-right: 0;
   }
 }
 
@@ -414,6 +440,27 @@ img {
   }
 }
 
+@media screen and (min-width: 1400px) {
+  .search {
+    visibility: visible;
+    width: 100%;
+
+    height: 100%;
+    transform: translate(0%, 0%);
+  }
+
+  .search::after {
+    transform: translate(35%, -50%);
+    padding: 10px 10px;
+  }
+
+  .search .nav__text {
+    visibility: visible;
+    width: 100%;
+    pointer-events: all;
+  }
+}
+
 .cart {
   /* margin: 0 10px 0 7px; */
 
@@ -439,6 +486,29 @@ img {
   padding: 27px 10px;
 }
 
+@media screen and (min-width: 1084px) {
+  .cart::after {
+    right: 5%;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .cart {
+    visibility: visible;
+    width: 100%;
+    margin-left: 10px;
+    position: relative;
+  }
+  .cart .nav__text {
+    display: block;
+  }
+
+  .cart::after {
+    right: 0;
+    transform: translate(0, -50%);
+  }
+}
+
 .sign-in {
   display: flex;
   align-items: center;
@@ -447,7 +517,7 @@ img {
 }
 
 .sign-in__text {
-  padding: 18px 4px 18px 12px;
+  /* padding: 18px 4px 18px 12px; */
   visibility: hidden;
   transform: scale(0);
 }
@@ -472,9 +542,32 @@ img {
 }
 
 @media screen and (min-width: 1084px) {
-  .sign-in__icon,
-  .cart::after {
+  .sign-in__icon {
     right: 5%;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .sign-in {
+    width: 100%;
+    height: 100%;
+    margin-left: 10px;
+    display: flex;
+    /* padding: 0; */
+    /* position: relative; */
+  }
+
+  .sign-in__text {
+    /* padding: 18px 4px 18px 12px; */
+    visibility: visible;
+    transform: scale(1);
+  }
+
+  .sign-in__icon {
+    position: static;
+    top: 0;
+    right: 0;
+    transform: translate(0%, 0%);
   }
 }
 

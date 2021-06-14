@@ -582,6 +582,7 @@ img {
     content: "";
     right: 8%;
     top: 35px;
+    z-index: 9999;
   }
 }
 
@@ -599,6 +600,7 @@ img {
   content: "";
   right: 8%;
   top: 35px;
+  z-index: 9999;
 }
 
 @media screen and (max-width: 1399px) {
@@ -616,5 +618,6 @@ img {
     content: "";
     right: 5%;
     top: 50px;
+    z-index: 9999;
   }
 }
